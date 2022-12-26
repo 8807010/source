@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(30, 28, 28);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__item {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.menu__item {
+  text-align: center;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.menu__link::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: yellowgreen;
+  bottom: 0;
+  left: 0;
+  /* left: 50%; */
+  width: 0;
+  transition: all 0.3s;
+}
+
+.menu__link:hover::after {
+  width: 100%;
+  /* left: 0; */
+}
