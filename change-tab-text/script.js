@@ -14,5 +14,5 @@ window.onblur = () => {
 
 window.onfocus = () => {
   clearTimeout(timer);
-  changeTitle('./favicon.png', t);
+  changeTitle('./favicon.ico', t);
 }
